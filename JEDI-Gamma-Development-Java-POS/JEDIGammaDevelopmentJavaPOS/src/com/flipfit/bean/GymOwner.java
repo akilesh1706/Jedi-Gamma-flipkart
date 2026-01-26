@@ -1,42 +1,107 @@
 package com.flipfit.bean;
 
-import java.util.List;
-
-/**
- * Bean class representing a Gym Owner in the FlipFit system.
- */
 public class GymOwner {
-    private String panCard;
-    private List<GymCentre> gymCentres;
-    
-    // Status: 0 = Pending, 1 = Approved, 2 = Rejected
-    private int approvalStatus = 0; 
 
-    // Constructor
-    public GymOwner() {}
+    private long ownerId;
+    private String ownerName;
+    private String ownerEmailAddress;
+    private String ownerPhone;
+    private String ownerPanNum;
+    private boolean isApproved;
+    private String ownerAddress;
+    private String password;
 
-    // Getters and Setters
-    public String getPanCard() {
-        return panCard;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPanCard(String panCard) {
-        this.panCard = panCard;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public List<GymCentre> getGymCentres() {
-        return gymCentres;
+    /**
+     * @return the ownerId
+     */
+    public long getOwnerId() {
+        return ownerId;
+    }
+    /**
+     * @param ownerId the ownerId to set
+     */
+    public void setOwnerId(long ownerId) {
+        this.ownerId = ownerId;
+    }
+    /**
+     * @return the ownerName
+     */
+    public String getOwnerName() {
+        return ownerName;
+    }
+    /**
+     * @param ownerName the ownerName to set
+     */
+    public void setOwnerName(String ownerName) {
+        this.ownerName = ownerName;
+    }
+    /**
+     * @return the ownerEmailAddress
+     */
+    public String getOwnerEmailAddress() {
+        return ownerEmailAddress;
+    }
+    /**
+     * @param ownerEmailAddress the ownerEmailAddress to set
+     */
+    public void setOwnerEmailAddress(String ownerEmailAddress) {
+        this.ownerEmailAddress = ownerEmailAddress;
+    }
+    /**
+     * @return the ownerPhone
+     */
+    public String getOwnerPhone() {
+        return ownerPhone;
+    }
+    /**
+     * @param ownerPhone the ownerPhone to set
+     */
+    public void setOwnerPhone(String ownerPhone) {
+        this.ownerPhone = ownerPhone;
+    }
+    /**
+     * @return the ownerGSTNum
+     */
+    public String getOwnerPanNum() {
+        return ownerPanNum;
+    }
+    /**
+     * @param ownerPanNum the ownerGSTNum to set
+     */
+    public void setOwnerPanNum(String ownerPanNum) {
+        this.ownerPanNum = ownerPanNum;
+    }
+    /**
+     * @return the isApproved
+     */
+    public boolean isApproved() {
+        return isApproved;
+    }
+    /**
+     * @param isApproved the isApproved to set
+     */
+    public void setApproved(boolean isApproved) {
+        this.isApproved = isApproved;
+    }
+    /**
+     * @return the ownerAddress
+     */
+    public String getOwnerAddress() {
+        return ownerAddress;
+    }
+    /**
+     * @param ownerAddress the ownerAddress to set
+     */
+    public void setOwnerAddress(String ownerAddress) {
+        this.ownerAddress = ownerAddress;
     }
 
-    public void setGymCentres(List<GymCentre> gymCentres) {
-        this.gymCentres = gymCentres;
-    }
-
-    public int getApprovalStatus() {
-        return approvalStatus;
-    }
-
-    public void setApprovalStatus(int approvalStatus) {
-        this.approvalStatus = approvalStatus;
-    }
 }
