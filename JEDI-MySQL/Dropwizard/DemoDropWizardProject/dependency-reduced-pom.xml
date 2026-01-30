@@ -150,7 +150,7 @@
   </dependencyManagement>
   <properties>
     <dropwizard.version>2.0.33</dropwizard.version>
-    <mainClass>com.dropwizard.App</mainClass>
+    <mainClass>com.flipkart.App</mainClass>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
